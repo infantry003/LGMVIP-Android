@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323232"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/color_primary">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Face and Smile Detector"
+        android:fontFamily="@font/rhdbold"
+        android:textSize="27dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="15dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- made by using MLKit on Firebase"
+        android:fontFamily="@font/rhdsemibold"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="-1dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"/>
+
+    <TextView
+        android:id="@+id/how"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/rhdmedium"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:text="• How to Use"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/camera_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/heading" />
+
+    <TextView
+        android:id="@+id/step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- tap the use camera button"
+        android:fontFamily="@font/rhdregularitalic"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/how"/>
+
+    <TextView
+        android:id="@+id/step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- smile onto the camera and click the image"
+        android:fontFamily="@font/rhdregularitalic"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="-1dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step1"/>
+
+    <TextView
+        android:id="@+id/step3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- confirm the image or retake"
+        android:fontFamily="@font/rhdregularitalic"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="-1dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step2"/>
+
+    <TextView
+        android:id="@+id/step4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- the results will be shown after you confirm the image"
+        android:fontFamily="@font/rhdregularitalic"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="-1dp"
+        android:paddingEnd="3dp"
+        android:paddingBottom="4dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step3"/>
+
+
+
+    <ImageView
+        android:id="@+id/virus1"
+        android:layout_width="169dp"
+        android:layout_height="88dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/letsgrowmorelogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="@color/border_color"
+        android:padding="16dp"
+        android:text="Use Camera"
+        android:textAllCaps="true"
+        android:fontFamily="@font/sourcesansprosemibolditalic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+  <!--  <Button
+        android:id="@+id/gallery_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="@color/border_color"
+        android:padding="16dp"
+        android:text="Open From Gallery"
+        app:layout_constraintTop_toBottomOf="@id/camera_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" /> -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
